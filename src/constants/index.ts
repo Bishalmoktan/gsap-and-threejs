@@ -1,3 +1,4 @@
+import { ModelType } from "../components/model-view";
 import {
   blackImg,
   blueImg,
@@ -46,7 +47,7 @@ export const hightlightsSlides = [
   },
 ];
 
-export const models = [
+export const models : ModelType[] = [
   {
     id: 1,
     title: "iPhone 15 Pro in Natural Titanium",
@@ -73,7 +74,12 @@ export const models = [
   },
 ];
 
-export const sizes = [
+interface ISize {
+  label: string;
+  value: 'small' | 'large'
+}
+
+export const sizes: ISize[] = [
   { label: '6.1"', value: "small" },
   { label: '6.7"', value: "large" },
 ];
